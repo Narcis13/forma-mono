@@ -10,5 +10,6 @@ export type {
   ValidationResult,
 } from "./schema.js";
 
+export { FormBuilder } from "./builder.js";
 export { FormatRegistry } from "./formats/registry.js";
 export type { FormatDefinition } from "./formats/registry.js";
