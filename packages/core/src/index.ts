@@ -16,3 +16,10 @@ export { FormIntrospector } from "./introspect.js";
 export type { FormDescription } from "./introspect.js";
 export { FormatRegistry } from "./formats/registry.js";
 export type { FormatDefinition } from "./formats/registry.js";
+
+import { generateClaudeToolSchema } from "./generators/claude.js";
+export type { ClaudeToolDefinition } from "./generators/claude.js";
+
+export const ToolSchemaGenerator = {
+  claude: generateClaudeToolSchema,
+};
